@@ -1,39 +1,121 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>评论区留言</title>
-    <style type="text/css">
-        .div1,div{
-            width: 1350px;
-            margin:0 auto;
+    <head>
+      <title>一个小站</title>
+      <link rel="shortcut icon" href="./img/favicon.ico" />
+      <link rel="bookmark"href="./img/favicon.ico" />
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="sousuo.css">
+      <style> 
+        body {
+          background:url("./img/1.jpg")  no-repeat center center;
+          background-size:cover;
+          background-attachment:fixed;
         }
-    </style>
-</head>
-<body>
-    <div class="div1" id="div1">
-        <!-- 创建昵称和留言文本框 -->
-        <span>昵称：</span><input type="text" id="user" name="user">
-        <br>
-        <span>留言：</span><textarea id="lang"></textarea><br>
-        <!-- 创建提交评价按钮 -->
-        <input type="button" value="提交评价" id="btn">
-    </div>
-</body>
+      </style>
+    </head>
+    <body>
+        <div class="nav">
+            <ul>
+              <li>
+                <a>学习</a>
+                <div>
+                  <ul>
+                  <li><a href="https://rzpt.hncu.edu.cn/lyuapServer/login?service=http://ywpt.hncu.edu.cn:4106/shiro-cas">城院门户</a></li>
+                  <li><a href="https://sfrz.hnfnu.edu.cn/lyuapServer/login?service=https%3A%2F%2Fsfrz.hnfnu.edu.cn%2Fshunt%2Findex.jsp">第一师范门户</a></li>
+                  <li><a href="https://www.mosoteach.cn/web/">云班课PC版</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>IT</a>
+                <div>
+                  <ul>
+                  <li><a href="http://github.com">GitHub</a></li>
+                  <li><a href="https://gitee.com">Gitee</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>音乐</a>
+                <div>
+                  <ul>
+                  <li><a href="https://music.163.com">网易云音乐</a></li>
+                  <li><a href="https://y.qq.com">QQ音乐</a></li>
+                  <li><a href="https://www.kuwo.cn">酷我音乐</a></li>
+                  <li><a href="https://www.kugou.com">酷狗音乐</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>视频</a>
+                <div>
+                  <ul>
+                  <li><a href="https://www.bilibili.com">BiliBili</a></li>
+                  <li><a href="http://www.iqiyi.com/">爱奇艺</a></li>
+                  <li><a href="https://v.qq.com">腾讯视频</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a>工具</a>
+                <div>
+                  <ul>
+                  <li><a href="https://translate.google.cn/">Google翻译</a></li>
+                  <li><a href="https://www.baidu.com">百度</a></li>
+                  <li><a href="www.bing.com">bing</a></li>
+                  <li><a href="https://www.microsoft.com/zh-cn">微软</a></li>
+                  </ul>
+              <li>
+                <a>购物</a>
+                <div>
+                  <ul>
+                    <li><a href="https://www.jd.com/">京东</a></li>
+                    <li><a href="https://www.taobao.com/">淘宝</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="./download/index.html">下载中心</a>
+              </li>
+                  </ul>
+                </div>
+             </li>
+            </ul>
+           </div>
+           <div>
+           </div> 
+           <div id="he-plugin-standard"></div>
+           <script>
+           WIDGET = {
+             "CONFIG": {
+               "layout": "1",
+               "width": "450",
+               "height": "150",
+               "background": "1",
+               "dataColor": "FFFFFF",
+               "borderRadius": "5",
+               "key": "70598290eba1475e98a9788a63d073cf"
+              }
+              }
+          </script>
+           <script src="./weather.js"></script>   
+           <div id="container">
+            <div id="wrapper">
+                <div id="logo">  <img src="./img/new-bing-logo.png" alt="tupian" id="logo"> </div>
+                <form action="https://cn.bing.com/search" target="_self" method="get"  >
+                    <input type="text" id="search-input" name="q" placeholder="请输入要搜索的内容：" autofocus>
+                    <input type="submit" id="search-button" value="">
+                </form>
+            </div>
+        </div> 
+      </div>  
+      <div id="SOHUCS" sid="请将此处替换为配置SourceID的语句"></div>
+<script charset="utf-8" type="text/javascript" src="https://cy-cdn.kuaizhan.com/upload/changyan.js" ></script>
 <script type="text/javascript">
-    //通过id属性查找标签节点
-    var user=document.getElementById('user');
-    var lang=document.getElementById('lang');
-    //通过id属性查找提交评价按钮并绑定点击事件
-    document.getElementById('btn').onclick=function(){
-        //在html代码中创建一个div盒子
-        var cont=document.createElement('div');
-        //将获取到的数据，放到一创建好的盒子中
-        cont.innerHTML='<p>'+user.value+':'+lang.value+'</p><hr>';
-        //将创建好的div盒子及及内容显示在页面中
-        document.getElementById('div1').appendChild(cont);
-        user.value='';
-        lang.value='';
-    }
-</script>
+window.changyan.api.config({
+appid: 'cyvMmkinw',
+conf: 'prod_74d34efc80b1bcd99a642dab6c208562'
+});
+</script>   
+    </body>
 </html>
